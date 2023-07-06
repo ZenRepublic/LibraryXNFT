@@ -12,7 +12,7 @@
 <body style="text-align: center">
   <canvas id="unity-canvas" width=1366 height=768
     style="width: 1366px; height: 768px; background: #231F20"></canvas>
-  <script src="Build/Build.loader.js"></script>
+  <script src="Build/xnftbuild.loader.js"></script>
   <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.js"> </script>
   <script>
       let connection = new solanaWeb3.Connection(solanaWeb3.clusterApiUrl('mainnet-beta'));
@@ -21,9 +21,9 @@
     var webglPlayer;
     onload = () => {
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Build.data",
-        frameworkUrl: "Build/Build.framework.js",
-        codeUrl: "Build/Build.wasm",
+        dataUrl: "Build/xnftbuild.data",
+        frameworkUrl: "Build/xnftbuild.framework.js",
+        codeUrl: "Build/xnftbuild.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Zen Republic",
         productName: "Zencyclopedia Library",
